@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letras y colores</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .square {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LETRAS, CUADRADOS Y COLORES</h1>
+    <h4>A continuación, te encontrarás con un cuadrado en blanco, el cual puede realizar diferentes acciones,dependiendo
+        de las teclas seleccionadas: </h4>
+    <p>Si seleccionas la letra "a" el cuadrado cambiará a rosado, la "s" guardará el color naranjo y la "d" lo
+        pintará celeste.</p>
+    <p>Por su parte, al presionar las teclas "q", "w" o "e" se creará un nuevo cuadrado con los colores morado, gris y
+        café respectivamente.</p>
+
+    <div id="container">
+        <div id="key" class="square"></div>
+    </div>
+    <script src="./assets/js/scriptletras.js"></script>
+</body>
+
+</html>
